@@ -1,0 +1,43 @@
+.mailing{
+    padding: 15px;
+    display: flex;
+     border-radius: 20px;
+  background-color: white;
+
+    gap:30px;
+    flex-direction: column;
+}
+.detailsConatainer{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    
+}
+.detailsMail{display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.detailsLoc{
+    display: flex;
+      gap:20px;
+   
+     
+}
+.titleMailing{
+color: black;
+font-weight: bold;
+}
+ 
+
+.lightMailing{
+    color: #aaaaaa;
+    font-weight: 600;
+
+}
+.darkMailing{
+    color:#1e519f;
+    font-weight:600;
+    /* font-weight: normal; */
+    
+}

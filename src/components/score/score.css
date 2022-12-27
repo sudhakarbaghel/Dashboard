@@ -1,0 +1,27 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 25px;
+  gap: 30px;
+  align-items: center;
+}
+
+.MuiCircularProgress-circleDeterminate {
+  color: #54bc5c;
+  background-color: #54bc5c;
+}
+
+.title {
+  color: #08295a;
+  font-weight: bold;
+}
+.celebrate{
+    width: 70%;
+    text-align: center;
+    color: #aaaaaa;
+    font-weight: 600;
+   
+}

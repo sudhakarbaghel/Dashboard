@@ -1,0 +1,49 @@
+.dashboard{
+background-color:#f9f9f9 ;
+height: 200vh;
+  
+padding: 30px;
+display: flex;
+flex-direction: column;
+gap:30px
+}
+.dashboardContainer{
+display: flex;
+gap:40px
+
+}
+.dashboardWrapper{
+    display: flex;
+    gap:40px;
+    flex:1;
+}
+.dashboard>span{
+    color: #555555;
+     font-weight: bold;
+     font-size: 20px;
+}
+ .dashboardItem{
+    flex:1;
+ }
+
+@media only screen and (max-width: 750px) {
+ .dashboardContainer{
+display: flex;
+flex-direction: column;
+gap:25px
+}
+.dashboardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    flex:1;
+}
+}
+@media only screen and (max-width: 1300px) {
+
+     .dashboardContainer{
+display: flex;
+flex-direction: column;
+gap:25px
+}
+}

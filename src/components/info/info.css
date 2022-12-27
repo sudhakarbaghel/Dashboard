@@ -1,0 +1,92 @@
+.info{
+  position: relative;
+  overflow: hidden;
+
+
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.notch {
+  border: 1px solid #96d4ff;
+  height: 65px;
+  position: absolute;
+  
+  top: 15px;
+  left: -33px;
+  width: 40px;
+
+  background-color: #96d4ff;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.lightno {
+  font-weight: bold;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.appl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.applWrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.applNo {
+  background-color: #f0fbf5;
+  color: #4ae06b;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 0 15px 0 15px;
+}
+
+.details {
+  display: flex;
+  gap: 0;
+}
+.leads {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+.student {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  border-left: 2px solid #f0f0f0;
+  flex: 1;
+  gap: 15px;
+}
+
+.dark {
+  color: #08295a;
+  font-size: 20px;
+  font-weight: 750;
+}
+.light {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 600;
+}
