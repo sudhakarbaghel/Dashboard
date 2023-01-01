@@ -1,0 +1,39 @@
+ .profileAndScore{
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+ }
+ .profileAndScoreItem1>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+ }
+ .profileAndScoreItem1{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    
+ }
+ 
+ .profileAndScoreContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e519f;
+    border-radius: 20px;
+    padding:15px;
+ }
+ .profileAndScoreItem{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+ }
+ .profileAndScoreScore{
+font-weight: bold;
+color: white;
+ }
+ .profileAndScoreExam{
+    color:white;
+ }

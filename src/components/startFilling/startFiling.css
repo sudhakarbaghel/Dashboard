@@ -1,0 +1,40 @@
+.startFiling{
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     padding: 20px;
+     background-color: white;
+
+}
+.startFilingTitle{
+    font-weight: 700;
+    color: #1e519f;
+}
+.startFilingDetail{
+font-weight: 600;
+color: #555555;
+}
+.startFilingBox{
+    display: flex;
+    justify-content: space-between;
+}
+.startFilingDate{
+    font-weight: 600;
+}
+.startFilingImgWrapper{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.startFilingAuthor{
+    color: #aaaaaa;
+    font-weight: 600;
+}
+.startFilingImgWrapper>img{
+object-fit:cover;
+border-radius: 50%;
+width:28px;
+cursor: pointer;
+height:28px;
+}

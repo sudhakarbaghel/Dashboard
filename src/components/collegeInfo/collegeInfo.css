@@ -1,0 +1,37 @@
+.collegeInfo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.collegeInfoHeading{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding :10px 15px 10px 15px;
+    background-color:#f8fafc;
+    align-items: center;
+}
+.collegeInfoTitle{
+font-weight: bold;
+color: #1e519f;
+
+}
+.collegeInfoDetail{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:5px
+}
+.collegeInfoBottom{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    gap:20px
+}
+.collegeInfoBottomItem{
+    display: flex;
+     gap:10px
+}

@@ -7,7 +7,7 @@ export default function Ielts() {
       <span className="ieltsTitle">IELTS</span>
       <hr className="ieltsRule" />
       <div className="ieltsWrapper">
-        <div style={{ width: "25%", height: "25%",fontWeight:"bolder"}} >
+        <div style={{ minWidth: "70px",maxWidth:"100px", height: "25%",fontWeight:"bolder"}} >
           <CircularProgressbar value={75} text={"7.5"} strokeWidth={10} styles={buildStyles({
             textSize: '24px',
             pathTransitionDuration: 0.5,

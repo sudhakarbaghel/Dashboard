@@ -1,0 +1,48 @@
+.personalInfo{
+    display: flex;flex-direction: column;
+    gap:15px;
+    background-color: white;
+    padding: 20px;
+     border-radius: 20px;
+}
+.personalInfoHeading{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+justify-content:space-between;
+
+
+}
+.personalInfoTitle{
+    font-weight: bold;
+
+}
+.personalInfoEdit{
+    display: flex;
+    gap: 10px;
+}
+.personalInfoBtn{
+    border:none;
+ border-radius:9px;
+ width:35px;
+ height: 38px;
+ background-color:  #1e519f;
+ color: white;
+ cursor: pointer;
+}
+.personInfoDetails{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    padding: 20px;
+    
+}
+.personalInfoLight{
+color:#aaaaaa;
+font-weight: 600;
+
+}
+.personalInfoDark{
+    color:#1e519f;
+    font-weight: 600;
+}

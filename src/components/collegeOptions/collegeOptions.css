@@ -1,0 +1,95 @@
+.collegeOptions {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+background-color: white;
+  border-radius: 20px;
+ 
+  gap: 20px;
+}
+.collegeOptionsHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collegeOptionsHeadingItem {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.collegeOptionsSelectBorder {
+  border-radius: 15px;
+  background-color: #f6fbf7;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+.collegeOptionsImg {
+  object-fit: scale-down;
+
+  width: 70%;
+  height: 100%;
+}
+.collegeOptionsImgWrapper {
+  background-color: #081f3f;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  justify-content: center;
+  display: flex;
+}
+ 
+.collegeOptionsSelectOption{
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 15px;
+}
+.collegeOptionsItem{
+  display: flex;
+  gap:15px
+}
+.collegeOptionsItem1{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.collegeOptionsBtn{
+  flex:1;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #1e519f;
+  font-weight: 700;
+  color: #1e519f;
+  background-color: white;
+  cursor: pointer;
+}
+.collegeOptionsBtnVisibility{
+  display: none;
+}
+.collegeOptionsLocationWrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.collegeOptionsLight{
+  color: #aaaaaa;
+  font-weight: 600;
+  
+}
+@media only screen and (max-width: 550px){
+  
+  .collegeOptionsItem1{
+  display: flex;
+   flex-direction: column-reverse;
+  gap:10px;
+}
+.collegeOptionsImgWrapper{
+  width: 80px;
+  height: 80px;
+}
+.collegeOptionsBtnVisibility{
+  display:block;
+}
+}

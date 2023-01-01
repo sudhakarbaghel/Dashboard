@@ -1,0 +1,45 @@
+.addresses{
+    width: 550px;
+
+}
+.addBox{
+
+background-image: repeating-linear-gradient(0deg, #9747ff, #9747ff 10px, transparent 10px, transparent 14px, #9747ff 14px), repeating-linear-gradient(90deg, #9747ff, #9747ff 10px, transparent 10px, transparent 14px, #9747ff 14px), repeating-linear-gradient(180deg, #9747ff, #9747ff 10px, transparent 10px, transparent 14px, #9747ff 14px), repeating-linear-gradient(270deg, #9747ff, #9747ff 10px, transparent 10px, transparent 14px, #9747ff 14px);
+background-size: 1.3px 100%, 100% 1.3px, 1.3px 100% , 100% 1.3px;
+background-position: 0 0, 0 0, 100% 0, 0 100%;
+background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+ gap:20px;
+   
+ 
+padding: 15px;
+ 
+}
+.addItem{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+}
+.addDetail{
+    display: flex;
+    gap: 10px;
+    
+}
+.addTitle{
+    font-weight: bold;
+}
+.addBtn{
+ border:none;
+ border-radius:9px;
+ width:35px;
+ height: 38px;
+ background-color:  #1e519f;
+ color: white;
+ font-size: 25px;
+ cursor: pointer;
+
+}
+
+

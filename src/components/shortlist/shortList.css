@@ -1,0 +1,25 @@
+.shortlist{
+    background-color: #eaf3f9;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+}
+.shortlist>span{
+    font-weight: bold;
+    color: #1e519f;
+    font-size: 15px;
+}
+.shortlist>button{
+    border-radius: 5px;
+    color: white;
+    background-color: #1e519f;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    /* font-weight: bold; */
+    height: inherit;width: 40px;
+}

@@ -1,0 +1,267 @@
+.collegeCourseCardWrapper {
+  display: flex;
+  gap: 50px;
+}
+.intake {
+  background-color: #f9f1f4;
+  color: #ff508f;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  font-weight: 700;
+  padding: 4px 10px;
+  display: flex;
+  gap: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.collegeCourseIntakeOptions {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(176, 142, 142, 0.2);
+  padding: 20px 10px;
+  color: black;
+  font-size: 15px;
+  z-index: 2;
+  background-color: white;
+}
+.collegeCourseIntakeOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.collegeCourseIntakeOptionsContainer > div {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.collegeCourseIntakeOptionsContainer > div:hover {
+  background-color: #f6fbf7;
+}
+ 
+.collegeCourseCard {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  max-width: 75%;
+  background-color: white;
+}
+
+.collegeCourseCardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.collegeCourseCardLeft,
+.collegeCourseCardRight {
+  display: flex;
+  gap: 15px;
+  /* flex-wrap: wrap; */
+}
+.collegeCourseCardRight {
+  margin-right: 20px;
+}
+.collegeCourseCardMaster {
+  background-color: #1e519f;
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.collegeCourseCardFall {
+  background-color: #fbf7fe;
+  color: #ad5dfc;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.collegeCourseCardRight {
+  display: flex;
+}
+#shortlisted {
+  background-color: #ff9d00;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 5px 10px;
+  display: flex;
+  gap: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#priority {
+  background-color: #f6fbf7;
+  color: #17851f;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 4px 10px;
+  display: flex;
+  gap: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.collegeCoursePriorityOptions {
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(176, 142, 142, 0.2);
+  padding: 20px 10px;
+  color: black;
+  font-size: 15px;
+  z-index: 2;
+  background-color: white;
+}
+.collegeCoursePriorityOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.collegeCoursePriorityOptionsContainer > div {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.collegeCoursePriorityOptionsContainer > div:hover {
+  background-color: #f6fbf7;
+}
+#compare {
+  background-color: #eff8ff;
+  color: #1e519f;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 5px 10px;
+  display: flex;
+  gap: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.collegeCourseCardDetailWrapper {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+}
+.collegeCourseCardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.collegeCourseCardDetailTitle {
+  font-weight: 700;
+}
+.collegeCourseCardIcon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.collegeCourseCardDetailGreen {
+  color: #555555;
+  font-weight: 600;
+}
+.collegeCourseCardDetailBorder {
+  color: #aaaaaa;
+  font-size: 19px;
+}
+.collegeCourseCardDetailFee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.collegeCourseCardDetailFeeDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.collegeCourseCardDetailDark {
+  font-weight: bold;
+}
+.collegeCourseCardDetailBlue {
+  color: #1e519f;
+  font-weight: bold;
+}
+.collegeCourseCardDetailScore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.collegeCourseCardDetailScoreItem {
+  display: flex;
+  gap: 15px;
+}
+@media only screen and (max-width: 2000px) {
+  .collegeCourseCardHr {
+    display: none;
+  }
+  #starIcon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+ 
+  .intake{
+    display: none;
+  }
+  .priorityMobileView {
+    display: block;
+  }
+  
+  .collegeCourseCardWrapper{
+    gap:0;
+  }
+  .collegeCourseCardHr {
+    display: block;
+  }
+  .collegeCourseCard {
+  max-width: 100%;
+  }
+  #compare {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+  }
+  #priority {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+  }
+
+  #shortlisted {
+    display: none;
+  }
+  #starIcon {
+    display: block;
+  }
+  .collegeCourseCardDetailBorder {
+    display: none;
+  }
+  .collegeCourseCardDetailWrapper{
+    padding-bottom: 100px;
+  }
+}

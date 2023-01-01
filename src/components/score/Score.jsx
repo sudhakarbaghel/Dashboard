@@ -3,13 +3,11 @@ import "./score.css"
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import "react-circular-progressbar/dist/styles.css";
 export default function Score() {
-  const [progress,setProgress]=useState(85)
-  const [size,setSize]=useState(100)
-  const [thick,setThick]=useState(5)
+   
   return (
     <div className='score'>
       <span className="title">Profile Score</span>
-      <div style={{ width: "40%", height: "40%",fontWeight: 700 }}>
+      <div style={{ maxWidth: "150px",minWidth:"130px", height: "40%",fontWeight: 700 }}>
       <CircularProgressbar value={80} text={"80%"} strokeWidth={10} styles={buildStyles({
         textSize: '16px',
         pathTransitionDuration: 0.5,

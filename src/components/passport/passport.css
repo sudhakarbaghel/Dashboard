@@ -1,0 +1,30 @@
+.passport{
+     background-color: #1e519f; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #08295b, #1d4f9c);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding: 20px;
+
+
+
+}
+.passportDetails{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap:15px;
+}
+.passportDetailsItem{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.passportDetailsItemWrapper{
+    display: flex;
+    gap:40px;
+}
+.passport>span{
+    font-weight: bold;
+}

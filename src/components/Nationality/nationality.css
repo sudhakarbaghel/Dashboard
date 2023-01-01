@@ -1,0 +1,33 @@
+.nationality{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+flex-direction: column;
+gap:15px;
+
+}
+.nationality>div{
+    display: flex;
+    gap:20px
+}
+.nationalityItem{
+    display: flex;
+    flex-direction: column;
+}
+.nationalityGray{
+    color: #aaaaaa;
+    font-weight: 600;
+}
+.nationalityBlue{
+    color:#1e519f ;
+    font-weight: 500;
+}
+.nationalityLeft
+{
+    position: absolute;
+left:150px;
+}
+.nationalityWrap{
+    position: relative;
+}

@@ -1,0 +1,68 @@
+.applications {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.applicationsHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.applicationsView{
+  border-radius: 15px;
+  background-color: #eaf3f9;
+  color:#1e519f;
+  padding: 6px 10px 6px 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.applicationsTitle{
+  font-weight: bold;
+}
+.applicationsDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+   border-radius: 20px;
+   padding: 15px;
+}
+.applicationsItem {
+  display: flex;
+  gap: 10px;
+}
+.applicationsItem>span{
+    border-radius: 20px;
+  background-color: #f6fbf7;
+   
+  padding: 6px 10px 6px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.applicationsPriority{
+  color:#17851f;
+}
+.applicationsMasters{
+color:#ff9d00;
+}
+.applicationsSpring{
+  color:#ff508f;
+}
+.applicationsItem1 {
+  display: flex;
+   
+  gap:15px;
+}
+
+.applicationsImg {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.applicationsLight{
+  color: #aaaaaa;
+  font-weight: 600;
+    
+}

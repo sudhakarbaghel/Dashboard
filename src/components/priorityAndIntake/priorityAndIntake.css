@@ -1,0 +1,97 @@
+.priorityAndIntake {
+  display: flex;
+  gap:40px;
+  /* display: none; */
+  flex-wrap: nowrap;
+}
+.priorityAndIntakePriority {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.priorityAndIntakeIntake{
+ display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.priorityAndIntakePriorityTitle {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f9f1f4;
+  padding: 5px 10px;
+  color: #17851f;
+  font-weight: bold;
+  gap: 10px;
+}
+.priorityAndIntakePriorityOptionContainer {
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px 10px;
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: white;
+}
+.priorityAndIntakePriorityOption{
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.priorityAndIntakePriorityOption > div {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+ 
+}
+
+.priorityAndIntakePriorityOption > div:hover {
+  background-color: #f6fbf7;
+}
+
+.priorityAndIntakeIntakeTitle{
+  background-color: #f9f1f4;
+  color: #ff508f;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 4px 10px;
+  display: flex;
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+.priorityAndIntakeIntakeOptionContainer{
+  border-radius: 20px;
+  padding: 20px 10px;
+  color: black;
+  font-size: 15px;
+  background-color: white;
+}
+.priorityAndIntakeIntakeOption{
+     display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.priorityAndIntakeIntakeOption>div{
+    border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+}
+.priorityAndIntakeIntakeOption > div:hover {
+  background-color: #f6fbf7;
+}
+
+@media only screen and (max-width: 750px) {
+  .priorityAndIntake{
+    /* display: block; */
+    
+  }
+}

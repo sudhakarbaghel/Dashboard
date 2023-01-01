@@ -1,0 +1,42 @@
+.countrySearch {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+.countryItemWrapper > img {
+  width: 20px;
+  height: 20px;
+}
+.countrySearchTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border: 2px  solid #f1f1f1;
+   border-radius: 10px;
+   
+}
+.countryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+  
+}
+.countryItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.countryItemWrapper{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-weight: 600;
+    
+}
