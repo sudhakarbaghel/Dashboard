@@ -4,8 +4,9 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 export default function CountrySearch() {
     return (
         <div className="countrySearch">
-            <div className="countrySearchTop">
-                <span style={{ color:"#aaaaaa",fontWeight:600}}>Search</span>
+            <div className="countrySearchTop" contentEditable={true} >
+        
+                <span style={{ color: "#aaaaaa", fontWeight: 600 }} >Search</span>
                 <CloseOutlinedIcon style={{ color: "#aaaaaa", fontWeight: 600 }} />
             </div>
             <div className="countryContainer">

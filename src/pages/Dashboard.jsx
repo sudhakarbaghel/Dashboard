@@ -71,7 +71,7 @@ export default function Dashboard() {
                 <div className="dashboardContainer3Item">
                     <CollegeInfo />
                 </div>
-                <div className="dashboardContainer3Item" >
+                <div className= "dashboardContainer3Item" >
                     <ProfileCard />
                 </div>
 

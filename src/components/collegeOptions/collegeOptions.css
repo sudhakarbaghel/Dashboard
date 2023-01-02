@@ -2,10 +2,21 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-background-color: white;
+  background-color: white;
   border-radius: 20px;
- 
   gap: 20px;
+}
+#collegeOptionspriority{
+  background-color: #f6fbf7;
+  color: #17851f;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
 }
 .collegeOptionsHeading {
   display: flex;
@@ -21,42 +32,43 @@ background-color: white;
   border-radius: 15px;
   background-color: #f6fbf7;
   border: none;
+  margin-right: 20px;
   padding: 5px;
   outline: none;
 }
 .collegeOptionsImg {
-  object-fit: scale-down;
-
-  width: 70%;
-  height: 100%;
+  object-fit: contain;
+  max-width: 70%;
+  max-height: 70%;
 }
 .collegeOptionsImgWrapper {
   background-color: #081f3f;
-  width: 80px;
-  height: 80px;
+   width: 80px;
+   min-width: 80px;
+   height: 80px;
   border-radius: 50%;
-
+  align-items: center;
   justify-content: center;
   display: flex;
 }
- 
-.collegeOptionsSelectOption{
+
+.collegeOptionsSelectOption {
   color: black;
   font-weight: 600;
   background-color: white;
   border-radius: 15px;
 }
-.collegeOptionsItem{
+.collegeOptionsItem {
   display: flex;
-  gap:15px
+  gap: 15px;
 }
-.collegeOptionsItem1{
+.collegeOptionsItem1 {
   display: flex;
   flex-wrap: wrap;
-  gap:10px;
+  gap: 10px;
 }
-.collegeOptionsBtn{
-  flex:1;
+.collegeOptionsBtn {
+  flex: 1;
   border-radius: 10px;
   padding: 5px;
   border: 1px solid #1e519f;
@@ -65,31 +77,29 @@ background-color: white;
   background-color: white;
   cursor: pointer;
 }
-.collegeOptionsBtnVisibility{
+.collegeOptionsBtnVisibility {
   display: none;
 }
-.collegeOptionsLocationWrapper{
+.collegeOptionsLocationWrapper {
   display: flex;
   align-items: center;
   margin-top: 5px;
 }
-.collegeOptionsLight{
+.collegeOptionsLight {
   color: #aaaaaa;
   font-weight: 600;
-  
 }
-@media only screen and (max-width: 550px){
-  
-  .collegeOptionsItem1{
-  display: flex;
-   flex-direction: column-reverse;
-  gap:10px;
-}
-.collegeOptionsImgWrapper{
+@media only screen and (max-width: 550px) {
+  .collegeOptionsItem1 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  /* .collegeOptionsImgWrapper{
   width: 80px;
   height: 80px;
-}
-.collegeOptionsBtnVisibility{
-  display:block;
-}
+} */
+  .collegeOptionsBtnVisibility {
+    display: block;
+  }
 }

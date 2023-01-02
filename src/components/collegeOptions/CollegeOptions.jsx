@@ -1,29 +1,44 @@
 import "./collegeOptions.css"
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { useState } from "react";
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+
 
 export default function CollegeOptions() {
     const [btn, setBtn] = useState({
         btn1: false, btn2: false, btn3: false
     });
-
+    const [openPriority, setOpenPriority] = useState(false)
+    const [priority, setPriority] = useState("Priority 1")
     function handleClick(x) {
         (x === "btn1") && setBtn({ [x]: !btn.btn1 });
         (x === "btn2") && setBtn({ [x]: !btn.btn2 });
         (x === "btn3") && setBtn({ [x]: !btn.btn3 });
 
     }
+    function handlePriority(event) {
+        console.log(event.target.data)
+        setPriority(event.target.innerHTML)
+        console.log(priority)
+    }
 
     return (
         <div className="collegeOptions">
             <div className="collegeOptionsHeading">
                 <div className="collegeOptionsHeadingItem">
-                    <select style={{ color: "#17851f", fontWeight: "bold" }} className="collegeOptionsSelectBorder" name="" id="">
-                        <option className="collegeOptionsSelectOption">Priority 1</option>
-                        <option className="collegeOptionsSelectOption">Priority 2</option>
-                        <option className="collegeOptionsSelectOption">Priority 3</option>
-                        <option className="collegeOptionsSelectOption">Priority 4</option>
-                    </select>
+                    <span onClick={() => setOpenPriority(!openPriority)} id="collegeOptionspriority">
+                        <span >{priority}</span>
+                        <KeyboardArrowDownOutlinedIcon />
+                        {openPriority && <div className="collegeCoursePriorityOptions">
+                            <div className="collegeCoursePriorityOptionsContainer">
+                                <div value="Priority 1" onClick={handlePriority}>Priority 1</div>
+                                <div onClick={handlePriority} value="Priority 2">Priority 2</div>
+                                <div onClick={handlePriority} value="Priority 3">Priority 3</div>
+                                <div onClick={handlePriority} value="Priority 4">Priority 4</div>
+                            </div>
+                        </div>}
+
+                    </span>
 
                     <select style={{ color: "#ff9d00", fontWeight: "bold" }} className="collegeOptionsSelectBorder" name="" id="">
                         <option className="collegeOptionsSelectOption">Masters</option>
@@ -47,7 +62,7 @@ export default function CollegeOptions() {
                     <img className="collegeOptionsImg" src="https://res.cloudinary.com/dw7xu0fus/image/upload/v1672393925/upload/fiualonetransreverse-removebg-preview_1_itecb1.png" alt="" />
                 </div>
                 <div>
-                    <p style={{ fontWeight: "700" }}>Kings College London</p>
+                    <p style={{ fontWeight: "700" }}>Florida International University</p>
                     <p className="collegeOptionsLight">Masters in Data Science and Visualization</p>
                     <div className="collegeOptionsLocationWrapper">
                         <LocationOnOutlinedIcon className="collegeOptionsLight" /> <span className="collegeOptionsLight">Chicago, Illinios</span>
@@ -64,7 +79,7 @@ export default function CollegeOptions() {
                 </div>
             </div>
             <div className="collegeOptionsItem1">
-                <button className="collegeOptionsBtn collegeOptionsBtnVisibility" style={{ backgroundColor: '#f6fbf7', color: "#54bc5c",border:"none" }}>Track</button>
+                <button className="collegeOptionsBtn collegeOptionsBtnVisibility" style={{ backgroundColor: '#f6fbf7', color: "#54bc5c", border: "none" }}>Track</button>
 
                 <button onClick={() => handleClick("btn1")} className="collegeOptionsBtn" style={btn.btn1 ? { backgroundColor: '#1e519f', color: "white" } : {}}>Request Payments</button>
                 <button onClick={() => handleClick("btn2")} className="collegeOptionsBtn" style={btn.btn2 ? { backgroundColor: '#1e519f', color: "white" } : {}}>Request Documents</button>

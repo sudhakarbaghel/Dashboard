@@ -1,7 +1,7 @@
 .dashboard {
   background-color: #f9f9f9;
   height:max-content;
-width: fit-content;
+ /* width: fit-content; */
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,8 @@ width: fit-content;
 
 }
 .dashboardContainer3Item{
-  flex: 1;
+  
+ flex: 1;
 }
 .dashboardContainer4{
   max-width: 600px;
@@ -72,6 +73,9 @@ width: fit-content;
   }
   .dashboardAddressWrapper{
     display: none;
+  }
+  .dashboardContainer3Item{
+    width: 100%;
   }
   .dashboardContainer2{
     flex-direction: column;

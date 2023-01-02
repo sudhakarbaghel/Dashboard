@@ -3,6 +3,7 @@
     background-color: white;
     padding: 15px 20px 25px;
     position: relative;
+    
     top:-9px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -13,14 +14,17 @@
 margin-top: 10px;
 }
 .profileCardHead{
-    /* background-color: #ffffff; */
+gap:15px;
     display: flex;
-   
     justify-content: space-between;
+}
+.profileCardHead::-webkit-scrollbar {
+  display: none;
 }
 .profileCardBtn{
     border-radius: 10px;
     border: none;
+    /* font-size: 0.6em; */
     display: flex;
     gap:10px;
     align-items: center;
@@ -29,14 +33,36 @@ margin-top: 10px;
     color: #555555;
    background-color: #f9f9f9;
     cursor: pointer;
-   
-    width: 100%;
+    width:100%;
+    justify-content: center;
 }
 .profileCardBtnWrapper{
     padding: 15px 10px 20px;
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
-    
+    /* content-visibility: hidden; */
  width: 25%;
+ display: flex;
+ 
 
+}
+.profileCardBtnWrapperMobile{
+    background-color: #ffffff;
+    
+}
+
+@media only screen and (max-width: 750px) {
+    .profileCardBtnWrapper{
+        /* background-color:#f9f9f9 ; */
+        width: fit-content;
+
+    }
+    .profileCardBtnWrapperMobile{
+    background-color:#f9f9f9;
+    
+}
+    .profileCardHead{
+overflow-x: scroll;
+
+    }
 }

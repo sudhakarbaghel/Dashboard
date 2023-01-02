@@ -24,10 +24,14 @@ justify-content:space-between;
 .personalInfoBtn{
     border:none;
  border-radius:9px;
- width:35px;
+ width:38px;
  height: 38px;
  background-color:  #1e519f;
  color: white;
+ display: flex;
+ align-items: center;
+ 
+ justify-content: center;
  cursor: pointer;
 }
 .personInfoDetails{
@@ -45,4 +49,8 @@ font-weight: 600;
 .personalInfoDark{
     color:#1e519f;
     font-weight: 600;
+    display: flex;
+    /* align-items: center; */
+    gap:10px;
+    outline: none;
 }

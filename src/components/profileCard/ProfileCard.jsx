@@ -4,6 +4,7 @@ import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import CenterFocusStrongOutlinedIcon from '@mui/icons-material/CenterFocusStrongOutlined';
 import { useState } from "react";
+import classnames from 'classnames';
 export default function ProfileCard() {
   const [btn, setBtn] = useState({
     btn1: true, btn2: false, btn3: false, btn4: false
@@ -19,17 +20,17 @@ export default function ProfileCard() {
   return (
     <div className="profileCard">
       <div className="profileCardHead">
-        <div className="profileCardBtnWrapper" style={btn.btn1 ?{backgroundColor:"white"} : {}}>
-          <button onClick={() => handleClick("btn1")} className="profileCardBtn" style={btn.btn1 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <PersonOutlineRoundedIcon /> Profile</button>
+        <div className={classnames('profileCardBtnWrapper', { profileCardBtnWrapperMobile :btn.btn1})}>
+          <button onClick={() => handleClick("btn1")} className="profileCardBtn" style={btn.btn1 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <PersonOutlineRoundedIcon /><span> Profile</span></button>
         </div>
-        <div className="profileCardBtnWrapper" style={btn.btn2 ?{backgroundColor:"white" }: {}}>
-          <button onClick={() => handleClick("btn2")} className="profileCardBtn" style={btn.btn2 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <DescriptionOutlinedIcon />Documents</button>
+        <div className={classnames('profileCardBtnWrapper', { profileCardBtnWrapperMobile :btn.btn2})}>
+          <button onClick={() => handleClick("btn2")} className="profileCardBtn" style={btn.btn2 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <DescriptionOutlinedIcon /> <span> Documents</span></button>
         </div>
-        <div className="profileCardBtnWrapper" style={btn.btn3 ?{backgroundColor: "white" }: {}}>
-          <button onClick={() => handleClick("btn3")} className="profileCardBtn" style={btn.btn3 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <GridViewOutlinedIcon />Applications</button>
+        <div className={classnames('profileCardBtnWrapper', { profileCardBtnWrapperMobile :btn.btn3})}>
+          <button onClick={() => handleClick("btn3")} className="profileCardBtn" style={btn.btn3 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <GridViewOutlinedIcon /><span>Applications</span> </button>
         </div>
-        <div className="profileCardBtnWrapper" style={btn.btn4 ?{backgroundColor: "white" }: {}}>
-          <button onClick={() => handleClick("btn4")} className="profileCardBtn" style={btn.btn4 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <CenterFocusStrongOutlinedIcon />Records</button>
+        <div className={classnames('profileCardBtnWrapper', { profileCardBtnWrapperMobile :btn.btn4})}>
+          <button onClick={() => handleClick("btn4")} className="profileCardBtn" style={btn.btn4 ? { backgroundColor: "#1e519f", color: "white" } : {}}> <CenterFocusStrongOutlinedIcon /> <span>Records</span> </button>
         </div>
       </div>
       <div className="profileCardContainer">

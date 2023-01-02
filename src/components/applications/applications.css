@@ -15,6 +15,7 @@
   padding: 6px 10px 6px 10px;
   font-weight: 700;
   font-size: 12px;
+  cursor: pointer;
 }
 .applicationsTitle{
   font-weight: bold;

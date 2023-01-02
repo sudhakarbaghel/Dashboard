@@ -45,7 +45,7 @@
 .collegeCourseIntakeOptionsContainer > div:hover {
   background-color: #f6fbf7;
 }
- 
+
 .collegeCourseCard {
   display: flex;
   border-radius: 20px;
@@ -66,7 +66,8 @@
 .collegeCourseCardLeft,
 .collegeCourseCardRight {
   display: flex;
-  gap: 15px;
+  gap: 0.5em;
+  font-size: 14px;
   /* flex-wrap: wrap; */
 }
 .collegeCourseCardRight {
@@ -109,10 +110,7 @@
   align-items: center;
   font-weight: 700;
   padding: 4px 10px;
-  display: flex;
-  gap: 5px;
   border-radius: 20px;
-  display: flex;
   gap: 8px;
   cursor: pointer;
   position: relative;
@@ -192,11 +190,12 @@
 .collegeCourseCardDetailFee {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   justify-content: space-between;
 }
 .collegeCourseCardDetailFeeDiv {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
 }
 .collegeCourseCardDetailDark {
@@ -224,32 +223,38 @@
   }
 }
 @media only screen and (max-width: 750px) {
- 
-  .intake{
+  .intake {
     display: none;
   }
   .priorityMobileView {
     display: block;
   }
-  
-  .collegeCourseCardWrapper{
-    gap:0;
+
+  .collegeCourseCardWrapper {
+    gap: 0;
   }
   .collegeCourseCardHr {
     display: block;
   }
   .collegeCourseCard {
-  max-width: 100%;
+    max-width: 100%;
   }
   #compare {
     position: absolute;
     bottom: 25px;
     right: 20px;
+    z-index: 555;
   }
+  .collegeCourseCardDetailScore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
   #priority {
     position: absolute;
     bottom: 25px;
     left: 20px;
+    z-index: 555;
   }
 
   #shortlisted {
@@ -257,11 +262,12 @@
   }
   #starIcon {
     display: block;
+    cursor: pointer;
   }
   .collegeCourseCardDetailBorder {
     display: none;
   }
-  .collegeCourseCardDetailWrapper{
+  .collegeCourseCardDetailWrapper {
     padding-bottom: 100px;
   }
 }

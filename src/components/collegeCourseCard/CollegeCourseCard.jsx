@@ -9,6 +9,12 @@ export default function CollegeCourseCard() {
     const [shortlistState, setShortlistState] = useState("Shortlist")
     const [open, setOpen] = useState(false)
     const [intake, setIntake] = useState(true)
+    const [priority, setPriority] = useState("Priority 1")
+    function handlePriority(event) {
+        console.log(event.target.data)
+        setPriority(event.target.innerHTML)
+        console.log(priority)
+    }
 
     function handleClick() {
         if (shortlistState === "Shortlist")
@@ -18,7 +24,7 @@ export default function CollegeCourseCard() {
     }
     return (
         <div className="collegeCourseCardWrapper">
-             
+
             <div className='collegeCourseCard'>
                 <div className="collegeCourseCardTop">
                     <div className="collegeCourseCardLeft">
@@ -28,17 +34,17 @@ export default function CollegeCourseCard() {
                         <span className="collegeCourseCardFall">Summer</span>
                     </div>
                     <div className="collegeCourseCardRight">
-                        <span onClick={handleClick} id="shortlisted" style={shortlistState === "Shortlist" ? { backgroundColor: "#fffaf3", color:"#ff9d00"}:{}}><span>{shortlistState}</span>  <StarOutlineRoundedIcon /></span>
-                        <StarOutlineRoundedIcon id="starIcon" style={{}} />
+                        <span onClick={handleClick} id="shortlisted" style={shortlistState === "Shortlist" ? { backgroundColor: "#fffaf3", color: "#ff9d00" } : {}}><span>{shortlistState}</span>  <StarOutlineRoundedIcon /></span>
+                        <StarOutlineRoundedIcon onClick={handleClick} id="starIcon" style={shortlistState === "Shortlisted" ? {color: "#ff9d00" } : {}} />
                         <span onClick={() => setOpen(!open)} id="priority">
-                            <span >Priority 1</span>
+                            <span >{priority}</span>
                             <KeyboardArrowDownOutlinedIcon />
                             {open && <div className="collegeCoursePriorityOptions">
                                 <div className="collegeCoursePriorityOptionsContainer">
-                                    <div>Priority 2</div>
-                                    <div>Priority 3</div>
-                                    <div>Priority 4</div>
-                                    <div>Priority 5</div>
+                                    <div value="Priority 1" onClick={handlePriority}>Priority 1</div>
+                                    <div onClick={handlePriority} value="Priority 2">Priority 2</div>
+                                    <div onClick={handlePriority} value="Priority 3">Priority 3</div>
+                                    <div onClick={handlePriority} value="Priority 4">Priority 4</div>
                                 </div>
                             </div>}
 

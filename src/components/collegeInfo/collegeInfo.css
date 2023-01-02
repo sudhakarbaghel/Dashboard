@@ -8,6 +8,8 @@
 }
 .collegeInfoHeading{
     display: flex;
+    gap:3px;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 15px;
     padding :10px 15px 10px 15px;
