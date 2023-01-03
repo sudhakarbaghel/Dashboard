@@ -33,7 +33,7 @@ export default function CollegeOptions() {
     }
 
     return (
-        <div className="collegeOptions">
+        <div className="collegeOptions" >
             <div className="collegeOptionsHeading">
                 <div className="collegeOptionsHeadingItem">
                     <span onClick={()=>handleOpen("p")} id="collegeOptionspriority">
@@ -78,7 +78,9 @@ export default function CollegeOptions() {
 
 
             </div>
-            <div className="collegeOptionsItem">
+            <div className="collegeOptionsItem" onClick={() => setOpen({
+                priority: false, masters: false, intake: false
+            })}>
                 <div className="collegeOptionsImgWrapper">
                     <img className="collegeOptionsImg" src="https://res.cloudinary.com/dw7xu0fus/image/upload/v1672393925/upload/fiualonetransreverse-removebg-preview_1_itecb1.png" alt="" />
                 </div>

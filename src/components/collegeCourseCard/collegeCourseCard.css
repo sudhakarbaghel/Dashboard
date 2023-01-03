@@ -75,6 +75,7 @@
   margin-right: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
 }
 .collegeCourseCardMaster {
   background-color: #1e519f;
@@ -175,6 +176,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .collegeCourseCardDetailTitle {
   font-weight: 700;
 }
@@ -278,12 +280,23 @@
   .collegeCourseCardDetailWrapper {
     padding-bottom: 100px;
   }
-
+.collegeCourseCardPara{
+   text-overflow:ellipsis;
+  overflow:hidden;
+  
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
   .collegeCourseCardLeft,
 .collegeCourseCardRight {
   display: flex;
   gap: 0.5em;
   font-size: 10px;
   /* flex-wrap: wrap; */
+}
+.collegeCourseCardDetailScoreItem{
+  font-size: 14px;
 }
 }

@@ -7,11 +7,19 @@
 }
 .personalInfoHeading{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    
 align-items: center;
 justify-content:space-between;
+    width:100%;
 
 
+
+}
+.personalInfoHeadingWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap:10px
 }
 .personalInfoTitle{
     font-weight: bold;
@@ -53,4 +61,16 @@ font-weight: 600;
     /* align-items: center; */
     gap:10px;
     outline: none;
+}
+
+@media only screen and (max-width: 750px){
+    .personalInfoHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.personalInfoWrapper{
+    display: flex;
+    gap:10px
+}
 }

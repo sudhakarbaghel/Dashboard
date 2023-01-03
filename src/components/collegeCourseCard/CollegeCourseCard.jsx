@@ -27,7 +27,7 @@ export default function CollegeCourseCard() {
 
             <div className='collegeCourseCard'>
                 <div className="collegeCourseCardTop">
-                    <div className="collegeCourseCardLeft">
+                    <div className="collegeCourseCardLeft" onClick={() => setOpen(false)}>
                         <span className="collegeCourseCardMaster">Masters</span>
                         <span className="collegeCourseCardFall">Fall</span>
                         <span className="collegeCourseCardFall">Spring</span>
@@ -52,7 +52,7 @@ export default function CollegeCourseCard() {
                         <span id="compare"><span>Compare</span> <input style={{ cursor: "pointer" }} className="collegeCourseCardCheckbox" type="checkbox" /></span>
                     </div>
                 </div>
-                <div className="collegeCourseCardDetailWrapper">
+                <div className="collegeCourseCardDetailWrapper" onClick={() => setOpen(false)}>
                     <div className="collegeCourseCardDetail">
                         <span className="collegeCourseCardDetailTitle">Data Science in Business Analytics</span>
                         <span className="collegeCourseCardIcon">
@@ -62,7 +62,7 @@ export default function CollegeCourseCard() {
                             <LocationOnOutlinedIcon style={{ color: "#1d57af" }} />
                             <span className="collegeCourseCardDetailGreen">Oxford, Mississippi</span>
                         </span>
-                        <p style={{ color: "#aaaaaa", zIndex: "0" }}>
+                        <p className="collegeCourseCardPara" style={{ color: "#aaaaaa", zIndex: "0" }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt non velit urna sagittis, lobortis in amet. Commodo orci mollis laoreet est.
                             Tincidunt volutpat sed vestibulum massa arcu. Venenatis feugiat fermentum vitae nisl eu fermentum mauris
                         </p>
