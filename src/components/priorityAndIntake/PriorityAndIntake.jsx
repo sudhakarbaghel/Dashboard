@@ -5,34 +5,44 @@ import { useState } from "react";
 
 export default function PriorityAndIntake() {
     const [open,setOpen]=useState(true)
-    const [intake,setIntake]=useState(true)
+    const [intake, setIntake] = useState(true)
+    const [data, setData] = useState({
+        priority: "Priority 1", masters: "Masters", intake: "Intake"
+    })
+    function handlePriority(x, e) {
+        setData(prevState => ({
+            ...prevState,
+            [x]: e.target.innerHTML
+        }));
+        x==="priority" && setOpen(!open)
+        x==="intake" && setIntake(!open)
+    }
     return (
         <div className="priorityAndIntake">
             <div className="priorityAndIntakePriority">
                 <div onClick={()=>setOpen(!open)} className="priorityAndIntakePriorityTitle">
-                    <span>Priority 1</span>
+                    <span>{data.priority}</span>
                     <KeyboardArrowDownOutlinedIcon />
                 </div>
 
               {open && <div className="priorityAndIntakePriorityOptionContainer">
                     <div className="priorityAndIntakePriorityOption">
-                        <div>Priority 2</div>
-                        <div>Priority 3</div>
-                        <div>Priority 4</div>
-                        <div>Priority 5</div>
+                        <div onClick={(e) => handlePriority("priority", e)} >Priority 2</div>
+                        <div onClick={(e) => handlePriority("priority", e)} >Priority 3</div>
+                        <div onClick={(e) => handlePriority("priority", e)} >Priority 4</div>
                     </div>
                 </div>}
             </div>
             <div className="priorityAndIntakeIntake">
                 <div onClick={()=>setIntake(!intake)} className="priorityAndIntakeIntakeTitle">
-                    <span>Intake : Spring 2022</span>
+                    <span>{data.intake}</span>
                     <KeyboardArrowDownOutlinedIcon />
                 </div>
                 {intake && <div className="priorityAndIntakeIntakeOptionContainer">
                     <div className="priorityAndIntakeIntakeOption">
-                        <div>Spring</div>
-                        <div>Fall</div>
-                        <div>Spring</div>
+                        <div onClick={(e) => handlePriority("intake", e)} >Spring</div>
+                        <div onClick={(e) => handlePriority("intake", e)} >Fall</div>
+                        <div onClick={(e) => handlePriority("intake", e)} >Summer</div>
                     </div>
                 </div>}
             </div>
