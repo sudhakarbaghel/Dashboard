@@ -3,6 +3,7 @@
     background-color: white;
     border-radius: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 flex-direction: column;
 gap:15px;
 
@@ -26,7 +27,7 @@ gap:15px;
 .nationalityLeft
 {
     position: absolute;
-left:150px;
+left:120px;
 }
 .nationalityWrap{
     position: relative;

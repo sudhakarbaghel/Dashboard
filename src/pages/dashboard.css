@@ -1,8 +1,20 @@
+.dashboardTopWrap{
+  background-color: #f9f9f9;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.dashboardTopWrap> span {
+  color: #555555;
+  font-weight: bold;
+  font-size: 20px;
+}
 .dashboard {
   background-color: #f9f9f9;
   height:max-content;
  /* width: fit-content; */
-  padding: 30px;
+  
   display: flex;
   flex-direction: column;
   gap: 45px;
@@ -10,17 +22,22 @@
 .dashboardContainer {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+}
+.dashboardContainer1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboardAddressWrapper{
+  flex:1;
 }
 .dashboardWrapper {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 40px;
   flex: 1;
 }
-.dashboard > span {
-  color: #555555;
-  font-weight: bold;
-  font-size: 20px;
-}
+
 .dashboardItem {
   flex: 1;
 }

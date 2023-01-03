@@ -8,50 +8,71 @@ export default function CollegeOptions() {
     const [btn, setBtn] = useState({
         btn1: false, btn2: false, btn3: false
     });
-    const [openPriority, setOpenPriority] = useState(false)
-    const [priority, setPriority] = useState("Priority 1")
+    const [open, setOpen] = useState({
+        priority: false, masters: false, intake: false
+    });
+    const [data, setData] = useState({
+        priority: "Priority 1", masters: "Masters", intake: "Intake"
+    })
     function handleClick(x) {
         (x === "btn1") && setBtn({ [x]: !btn.btn1 });
         (x === "btn2") && setBtn({ [x]: !btn.btn2 });
         (x === "btn3") && setBtn({ [x]: !btn.btn3 });
 
     }
-    function handlePriority(event) {
-        console.log(event.target.data)
-        setPriority(event.target.innerHTML)
-        console.log(priority)
+    function handleOpen(x) {
+        (x === "p") && setOpen({ priority: !open.priority });
+        (x === "m") && setOpen({ masters: !open.masters });
+        (x === "i") && setOpen({ intake: !open.intake });
+    }
+    function handlePriority(x,e) {
+        setData(prevState => ({
+            ...prevState,
+             [x]:e.target.innerHTML
+        }));
     }
 
     return (
         <div className="collegeOptions">
             <div className="collegeOptionsHeading">
                 <div className="collegeOptionsHeadingItem">
-                    <span onClick={() => setOpenPriority(!openPriority)} id="collegeOptionspriority">
-                        <span >{priority}</span>
+                    <span onClick={()=>handleOpen("p")} id="collegeOptionspriority">
+                        <span >{data.priority}</span>
                         <KeyboardArrowDownOutlinedIcon />
-                        {openPriority && <div className="collegeCoursePriorityOptions">
+                        {open.priority && <div className="collegeCoursePriorityOptions">
                             <div className="collegeCoursePriorityOptionsContainer">
-                                <div value="Priority 1" onClick={handlePriority}>Priority 1</div>
-                                <div onClick={handlePriority} value="Priority 2">Priority 2</div>
-                                <div onClick={handlePriority} value="Priority 3">Priority 3</div>
-                                <div onClick={handlePriority} value="Priority 4">Priority 4</div>
+                                <div onClick={(e) => handlePriority("priority",e)} >Priority 2</div>
+                                <div onClick={(e) => handlePriority("priority",e)} >Priority 3</div>
+                                <div onClick={(e) => handlePriority("priority",e)} >Priority 4</div>
                             </div>
                         </div>}
 
                     </span>
 
-                    <select style={{ color: "#ff9d00", fontWeight: "bold" }} className="collegeOptionsSelectBorder" name="" id="">
-                        <option className="collegeOptionsSelectOption">Masters</option>
-                        <option className="collegeOptionsSelectOption">P.H.D</option>
-                        <option className="collegeOptionsSelectOption">Graduate</option>
+                    <span onClick={() => handleOpen("m")} id="collegeOptionspriority" style={{ backgroundColor: "#fffaf3", color:"#ff9d00"}}>
+                        <span >{data.masters}</span>
+                        <KeyboardArrowDownOutlinedIcon />
+                        {open.masters && <div className="collegeCoursePriorityOptions">
+                            <div className="collegeCoursePriorityOptionsContainer">
+                                <div onClick={(e) => handlePriority("masters",e)} >Graduation</div>
+                                <div onClick={(e) => handlePriority("masters",e)} >PhD</div>
+                                <div onClick={(e) => handlePriority("masters",e)} >Under Grad</div>
+                            </div>
+                        </div>}
 
-                    </select>
+                    </span>
+                    <span onClick={() => handleOpen("i")} id="collegeOptionspriority" style={{ backgroundColor:"#fff6f9",color:"#ff508f"}}>
+                        <span >{data.intake}</span>
+                        <KeyboardArrowDownOutlinedIcon />
+                        {open.intake && <div className="collegeCoursePriorityOptions">
+                            <div className="collegeCoursePriorityOptionsContainer">
+                                <div onClick={(e) => handlePriority("intake",e)} >Spring</div>
+                                <div onClick={(e) => handlePriority("intake",e)} >Fall</div>
+                                <div onClick={(e) => handlePriority("intake",e)} >Summer</div>
+                            </div>
+                        </div>}
 
-                    <select style={{ color: "#fe4f8e", fontWeight: "bold" }} className="collegeOptionsSelectBorder" name="" id="">
-                        <option className="collegeOptionsSelectOption">Intake</option>
-                        <option className="collegeOptionsSelectOption">Fall</option>
-                        <option className="collegeOptionsSelectOption">Summer</option>
-                    </select>
+                    </span>
                 </div>
                 <span style={{ fontWeight: "bold", color: "#aaaaaa" }}>...</span>
 

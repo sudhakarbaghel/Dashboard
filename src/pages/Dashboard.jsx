@@ -23,10 +23,12 @@ import PersonalInfo from "../components/personalInfo/PersonalInfo";
 export default function Dashboard() {
 
     return (
-        <div className="dashboard">
+        <div className="dashboardTopWrap">
             <span>
                 Our Branches
             </span>
+        <div className="dashboard">
+           
             <div className="dashboardContainer">
                 <div className="dashboardWrapper">
                     <div className="dashboardItem">
@@ -85,6 +87,9 @@ export default function Dashboard() {
             <div className="dashboardContainer5">
                 <CollegeCourseCard />
             </div>
+            <div className="dashboardContainer5">
+                <CollegeCourseCard />
+            </div>
             <div >
                 <ShortList />
             </div>
@@ -104,6 +109,7 @@ export default function Dashboard() {
                 <div className="dashboardItem">
                     <Nationality />
                 </div>
+            </div>
             </div>
         </div>
     )
