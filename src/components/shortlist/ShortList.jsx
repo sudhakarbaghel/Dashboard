@@ -3,12 +3,7 @@ import "./shortList.css"
 
 export default function Shortlist() {
   const [edit, setEdit] = useState(true)
-  const [value, setValue] = useState("")
-  function handleChange(e)
-  {
-    console.log(e.currentTarget.value)
-    setValue(e.currentTarget.value)
-  }
+ 
   return (
     <div onClick={() => {
       setEdit(true)
